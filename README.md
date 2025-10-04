@@ -53,6 +53,6 @@ Let’s **learn, build, and grow together** 🌍
 
 ---
 
-📧 **Email:** [your-email@example.com](mailto:kahkashakhan1417@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/yourusername](https://www.linkedin.com/in/kahkasha-rafat-fatima-8672a0231/)  
-🐙 **GitHub:** [github.com/yourusername](https://github.com/kahkasha17/)  
+📧 **Email:** [kahkashakhan1417@gmail.com](mailto:kahkashakhan1417@gmail.com)  
+💼 **LinkedIn:** [https://www.linkedin.com/in/kahkasha-rafat-fatima-8672a0231/](https://www.linkedin.com/in/kahkasha-rafat-fatima-8672a0231/)  
+🐙 **GitHub:** [https://github.com/kahkasha17/](https://github.com/kahkasha17/)  
