@@ -12,20 +12,19 @@ From small daily tasks to full-fledged projects, this repo reflects my evolution
 
 ## 🧠 **What You’ll Find Here**
 
-- 🗓️ **Daily Tasks** — Short exercises to build coding consistency  
-- 🧩 **Assignments** — Weekly structured problems with explanations  
-- ⚔️ **Challenges** — Logical & creative coding exercises  
+- 🗓️ **Daily Assignment- after class** — Short exercises to build coding consistency  
+- 🧩 **In Class Tasks** — structured problems with explanations  
+- ⚔️ **Daily-Challenges** — Logical & creative coding exercises  
 - 🏗️ **Projects** — Real-world builds covering frontend & backend  
-- 📚 **Resources** — Articles, notes & study material gathered along the way  
 
 ---
 
 ## 📁 **Folder Structure**
 
 ```bash
-daily/         → daily practice logs & learnings  
-assignments/   → weekly submissions & writeups  
-challenges/    → coding challenges & explanations  
+After-Class-Assignments/         → daily practice logs & learnings  
+In-Class-Tasks/   → structured problems 
+Daily-Challenges/    → coding challenges & explanations  
 projects/      → frontend / full-stack projects  
 resources/     → useful notes, links & study guides  
 others/        → reflections, meeting notes, misc files  
