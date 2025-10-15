@@ -33,14 +33,10 @@ The goal of this assignment was to:
   - 📞 Contact Details
 - Simple CSS styling (colors, fonts, alignment)
 
----
+
 
 ## 🖼️ Preview
 
-_(You can add a screenshot here once deployed or by linking a local image)_  
-Example:
-
-```md
 ![Portfolio Preview](./screenshot.png)
 
 ## 🌐 Live Demo
@@ -49,7 +45,6 @@ You can view the live version of this project here:
 
 👉 **[View Live Project](https://kahkasha17.github.io/Shery-Portfolio-Assignment1/)**  
 _(Hosted using GitHub Pages)_
-```
 
 ## 🧠 What I Learned
 
@@ -58,7 +53,6 @@ _(Hosted using GitHub Pages)_
 - Structuring a resume layout using **HTML elements**
 - Using basic **CSS properties** for styling
 
----
 
 ## 🔮 Next Steps
 
@@ -66,15 +60,14 @@ _(Hosted using GitHub Pages)_
 - Enhance **UI** with animations and improved color palettes  
 - Integrate **JavaScript** for interactivity in future assignments
 
----
 
 ## 💡 Author
 
 **[Kahkasha Khan]**  
 *Full Stack Web Development Learner*  
 
-📧 **youremail@example.com**  
-🌍 [Your GitHub Profile](https://github.com/kahkasha17)
+📧 **codewithkahkasha1711@gmail.com**  
+🌍 [https://github.com/kahkasha17](https://github.com/kahkasha17)
 
 
 ---
