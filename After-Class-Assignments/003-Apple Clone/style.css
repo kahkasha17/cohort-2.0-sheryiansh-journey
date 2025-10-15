@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  height: 7vh;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+i {
+  font-size: 20px;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  padding: 60px 15px;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 4vw;
+  font-weight: 800;
+}
+
+#hero h3 {
+  color: white;
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#sub-hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_large.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 15px;
+}
+
+#sub-hero h1 {
+  color: #000;
+  font-size: 4vw;
+  font-weight: 700;
+}
+
+#sub-hero h3 {
+  color: black;
+  font-size: 2vw;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #0071e3;
+  color: #fff;
+  border: 1px solid #0071e3;
+}
+
+.btn-primary:hover {
+  background-color: #0077ed;
+  border-color: #0077ed;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 113, 227, 0.1);
+}
+
+#products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 0px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section {
+  background: #f0f0f0;
+  display: flex;
+  width: 48%;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.section i {
+  font-size: 3rem;
+}
+
+.section p {
+  font-size: 1.6rem;
+  color: #6e6e73;
+  margin-bottom: 20px;
+}
+
+.section img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+#watchse3 h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 55vh;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+  .section {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 7vw;
+  }
+  #hero h3 {
+    font-size: 4vw;
+  }
+  #sub-hero h1 {
+    font-size: 7vw;
+  }
+  #sub-hero h3 {
+    font-size: 4vw;
+  }
+  #products {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .section {
+    width: 100%;
+    height: auto;
+  }
+  .section h1 {
+    font-size: 2rem;
+  }
+  .section p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero h1,
+  #sub-hero h1 {
+    font-size: 6vw;
+  }
+  #hero h3,
+  #sub-hero h3 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero,
+  #sub-hero {
+    height: 80vh; /* Thoda chhota kar diya */
+  }
+  #hero h1,
+  #sub-hero h1 {
+    font-size: 8vw;
+  }
+  #hero h3,
+  #sub-hero h3 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero,
+  #sub-hero {
+    height: 70vh;
+    padding: 0 10px;
+  }
+  #hero h1,
+  #sub-hero h1 {
+    font-size: 9vw;
+  }
+  #hero h3,
+  #sub-hero h3 {
+    font-size: 5vw;
+  }
+}
