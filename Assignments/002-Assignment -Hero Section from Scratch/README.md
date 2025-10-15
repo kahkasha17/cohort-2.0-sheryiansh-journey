@@ -34,7 +34,7 @@ The goal of this assignment was to:
 
 ## 🖼️ Preview
 
-![Portfolio Preview](./screenshot.png)
+![Portfolio Preview](./screenshort.png)
 
 <!-- ## 🌐 Live Demo
 
