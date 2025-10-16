@@ -39,9 +39,10 @@ others/        → reflections, meeting notes, misc files
 
 | 📅 **Day** | 🧠 **Task / Topic** | 🔥 **Status** | 🕒 **Date** |
 |:----------:|:-------------------|:--------------|:------------|
-| 1 | HTML Basics | ✅ Completed | 2025-10-27 |
-| 2 | CSS Fundamentals | ⏳ In Progress | - |
+| 1 | HTML Basics | ✅ Completed | 2025-09-27 |
+| 2 | CSS Fundamentals | ✅ Completed | 2025-10-16 |
 | 3 | JavaScript Essentials | 🔜 Upcoming | - |
+<!-- | 2 | CSS Fundamentals | ⏳ In Progress | - | -->
 
 > ✨ *Progress tracker will be updated as the journey continues.*
 
