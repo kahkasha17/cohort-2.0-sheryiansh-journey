@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin back-img($url) {
+  background-image: url(#{$url});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  @include back-img("https://m.media-amazon.com/images/S/pv-target-images/19c2c6268bf53fb23ffc45f1d6fae7fbf738b36ef4f143ccfbec213552ead0e8._SX1080_FMjpg_.jpg");
+
+  section {
+    flex-grow: 1;
+    height: 100%;
+    border: 2px solid white;
+    transition: all ease 0.5s;
+    background: transparent; 
+  }
+
+  section:hover {
+    flex-grow: 2;
+  }
+
+  section:nth-child(1):hover {
+    @include back-img("https://i.pinimg.com/736x/99/b3/98/99b398c24df4e5dcbe9a6b571941ce08.jpg");
+  }
+  section:nth-child(2):hover {
+    @include back-img("https://play-lh.googleusercontent.com/BAxyWqRWBzJT7kW6kR7qgw2946MzJbOKm78_71qyEi_4_VIHvkU28uiDOz8U3lvuexiF");
+  }
+  section:nth-child(3):hover {
+    @include back-img("https://m.media-amazon.com/images/I/5147F62RsML._AC_UF1000,1000_QL80_.jpg");
+  }
+  section:nth-child(4):hover {
+    @include back-img("https://m.media-amazon.com/images/M/MV5BMDFjYTFjZGQtNDQ2Mi00OGE5LWE2ZGQtNTI5ODY4NTA0YzEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg");
+  }
+  section:nth-child(5):hover {
+    @include back-img("https://images.justwatch.com/poster/306562653/s718/insidious-5.jpg");
+  }
+}
