@@ -48,14 +48,6 @@ You can view the live version of this project here:
 👉 **[View Live Project](https://kahkasha17.github.io/Shery-Portfolio-Assignment1/)**  
 _(Hosted using GitHub Pages)_ -->
 
-## 🧠 What I Learned
-
-- Writing clean and semantic **HTML**
-- Linking external **CSS** files
-- Structuring a resume layout using **HTML elements**
-- Using basic **CSS properties** for styling
-
-
 ## 🔮 Next Steps
 
 - Add **responsive design** using media queries  

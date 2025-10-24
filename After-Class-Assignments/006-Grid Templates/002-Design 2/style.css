@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "naruto";
+  src: url("./assets/njnaruto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "demon";
+  src: url("./assets/bloodcrow.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bleach";
+  src: url("./assets/Komix.ttf") format("truetype");
+}
+@font-face {
+  font-family: "tanjiru";
+  src: url("./assets/TANJIRO.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+main {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "section1 section2 section2" " section1 section3 section4";
+  gap: 10px;
+}
+main section {
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+main section .overlay {
+  display: none;
+}
+main .section1 {
+  grid-area: section1;
+  background-image: url(https://wallpapers-clan.com/wp-content/uploads/2025/01/epic-naruto-uzumaki-half-face-matching-wallpaper-2-preview.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .section2 {
+  grid-area: section2;
+  background-image: url(https://4kwallpapers.com/images/wallpapers/demon-slayer-5120x2880-23247.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .section3 {
+  grid-area: section3;
+  background-image: url(https://www.slashfilm.com/img/gallery/the-correct-order-to-watch-the-bleach-anime-series-including-the-movies/what-about-bleach-filler-1725829145.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .section4 {
+  grid-area: section4;
+  background-image: url(https://static0.srcdn.com/wordpress/wp-content/uploads/2025/08/jujutsu-kaisen-cast.png);
+  background-position: center;
+  background-size: cover;
+}
+main .section1:hover {
+  background-image: none;
+  background-color: rgba(24, 22, 22, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section1:hover .overlay {
+  display: block;
+}
+main .section1:hover h1 {
+  font-size: 3rem;
+  font-family: "naruto";
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+}
+main .section1:hover p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .section2:hover {
+  background-image: none;
+  background-color: rgba(24, 22, 22, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section2:hover .overlay {
+  display: block;
+}
+main .section2:hover h1 {
+  font-size: 3rem;
+  font-family: "demon";
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+}
+main .section2:hover p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .section3:hover {
+  background-image: none;
+  background-color: rgba(24, 22, 22, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section3:hover .overlay {
+  display: block;
+}
+main .section3:hover h1 {
+  font-size: 3rem;
+  font-family: "bleach";
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+}
+main .section3:hover p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .section4:hover {
+  background-image: none;
+  background-color: rgba(24, 22, 22, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section4:hover .overlay {
+  display: block;
+}
+main .section4:hover h1 {
+  font-size: 3rem;
+  font-family: "tanjiru";
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+}
+main .section4:hover p {
+  font-size: 1.5rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
