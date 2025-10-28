@@ -100,6 +100,7 @@ footer {
 
 @media (min-width: 900px) {
   footer {
+    padding: 1rem;
     grid-template-columns: 20% 80% ;
     grid-template-rows: 90% 20%;
     grid-template-areas:
