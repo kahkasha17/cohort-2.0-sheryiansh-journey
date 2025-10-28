@@ -1,0 +1,117 @@
+footer {
+  width: 100%;
+  margin-top: 1rem;
+//   margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 85% 10%;
+  grid-template-areas:
+    "aside"
+    "footer-top"
+    "footer-bottom";
+  gap: 1rem;
+//   padding: 1rem;
+  color: rgba(255, 255, 255, 0.562);
+  aside {
+    padding: 1rem;
+    grid-area: aside;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .icons > i {
+      padding: 0.5rem;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.623);
+      background-color: #9b9a971f;
+
+      font-size: 1rem;
+      text-align: right;
+    }
+  }
+  #footer-top {
+    grid-area: footer-top;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .footer-left h3,
+    .footer-center h3,
+    .footer-right h3 {
+      color: white;
+      font-weight: 500;
+    }
+
+    .footer-left {
+      button {
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.295);
+        background-color: #cebd63;
+        text-transform: uppercase;
+      }
+    }
+    .footer-left .items a,
+    .footer-center .items a,
+    .footer-right .items a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.562);
+      font-weight: 500;
+    }
+
+    .footer-center .items h4,
+    .footer-left .items h4,
+    .footer-right .items h4 {
+      line-height: 2lh;
+    }
+  }
+  #footer-bottom {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+
+    grid-area: footer-bottom;
+    padding: 1.5rem;
+    line-height: 1.5lh;
+
+    h3 {
+      font-size: 1rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.74);
+        line-height: 1lh;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  footer {
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 90% 20%;
+    grid-template-areas:
+      "aside footer-top"
+      "aside footer-bottom";   
+
+
+      #footer-top{
+        flex-direction: row;
+      }
+  }
+}
+
+@media (min-width: 1700px) {
+}
