@@ -40,7 +40,7 @@ The UI focuses on **minimalism + modern visual appeal**, suitable for color tool
 
 You can view the live version of this project here:
 
-👉 **[View Live Project](https://kahkasha17.github.io/random-color-generator/)**  
+👉 **[View Live Project](https://kahkasha17.github.io/Random-Color-Generator/)**  
 _(Hosted using GitHub Pages)_
 
 ---
