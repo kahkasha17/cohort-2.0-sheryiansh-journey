@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: linear-gradient(135deg, #b3d4ff, #d7c7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background: linear-gradient(135deg, #b3d4ff, #d7c7ff);
+  color: white;
+  text-align: center;
+  line-height: 1;
+  padding: 1rem;
+  gap: 2rem;
+  height: 90%;
+  width: 90%;
+  background-color: red;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+main #box {
+  height: 50%;
+  width: 70%;
+  background-color: red;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px rgba(239, 138, 207, 0.45);
+}
+main #copy {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main #copy span {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+main #copy i {
+  color: black;
+}
+main button {
+  padding: 1rem 3rem;
+  border: none;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #6fb4ff 0%, #4f8dff 50%, #8aa5ff 100%);
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+}
+main button:active {
+  scale: 0.9;
+}
+
+@media (min-width: 900px) {
+  main {
+    height: 80%;
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
