@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f3f3;
+
+  #container {
+    height: 100%;
+    width: 100%;
+  }
+
+  #navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  #navItems {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    height: 5%;
+    width: 5%;
+  }
+
+  button {
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  #heroSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #heroLeft {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: red; */
+  }
+
+  #heroLeftCenter,
+  #heroLeftButtom {
+    display: flex;
+    flex-direction: column;
+  }
+  #heroLeftTop{
+    display: flex;
+    gap: 2rem;
+  }
+
+   #heroLeftTop p{
+    font-size: 2rem;
+   } 
+     #heroLeftTop span{
+        color: gray;
+     }
+
+
+     #heroLeftCenter h1{
+        font-size: 8rem;
+     } 
+      #heroLeftCenter p{
+        font-weight: 500;
+
+      }
+
+        #heroLeftButtom{
+            position: absolute;
+            bottom: 10%;
+        }
+  .heroImg {
+    background-image: url(./Public/images/heroimg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

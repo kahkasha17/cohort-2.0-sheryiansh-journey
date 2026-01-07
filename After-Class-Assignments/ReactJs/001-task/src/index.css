@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  /* background-color: red; */
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1.5rem; */
+}
+.navlinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.navCTA button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #0d1a2d;
+  color: white;
+}
+
+.heroSection {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  text-align: center;
+  gap: 1rem;
+  /* padding: 2rem; */
+  height: 80vh;
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  background-image: url(../public/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroSection h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.heroSection p {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.heroSection button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #0d1a2d;
+  color: white;
+}
+
+.HeroLandingFooter {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+
+  position: absolute;
+  bottom: 2%;
+}
+
+.LandingFooter-left {
+  display: flex;
+}
+.LandingFooter-right {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  font-weight: 700;
+  align-items: center;
+}
+.LandingFooter-right a {
+  color: #fff;
+}
+.LandingFooter-people {
+  background-color: rgba(255, 255, 255, 0.336);
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  /* justify-self: center; */
+  border-radius: 2rem;
+}
+.LandingFooter-people img {
+  height: 50px;
+  width: 50px;
+  margin-left: -1.2rem;
+
+  border-radius: 50%;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+.Section1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.Section1-left {
+  height: fit-content;
+  padding: 0.5rem;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+.Section1-right {
+  width: 50%;
+  font-weight: 900;
+}
+
+.Section2{
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: red; */
+  
+  
+}
+
+#cards{
+display: flex;
+justify-content: space-between;
+padding: 2rem;
+gap: 2rem;
+
+}
+
+.card{
+  height: 50vh;
+  width: 33.3%;
+  border-radius: 2rem;
+  background-color: yellow;
+}
