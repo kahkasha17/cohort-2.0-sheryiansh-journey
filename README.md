@@ -42,7 +42,9 @@ others/        → reflections, meeting notes, misc files
 | 1 | HTML Basics | ✅ Completed | 2025-09-27 |
 | 2 | CSS Fundamentals | ✅ Completed | 2025-10-16 |
 | 3 | Vanilla JavaScript |  ✅ Completed | 2025-12-15 |
-| 4 | React JS |  ⏳ In Progress | - |
+| 4 | React JS |  ✅ Completed | 2026-01-15 |
+| 5 | Express JS |  ✅ Complete | 2026-01-24 |
+| 6 | Mongo DB |  ⏳ In Progress | - |
 <!-- | 2 | CSS Fundamentals | 🔜 Upcoming | - | -->
 
 > ✨ *Progress tracker will be updated as the journey continues.*
