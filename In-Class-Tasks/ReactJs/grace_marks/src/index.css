@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-color: #222;
+  color:#fff;
+}
+h1{
+  padding-left: 2rem;
+}
+button{
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: cyan;
+  font-size: large;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+button:active{
+  scale: 0.87;
+}
