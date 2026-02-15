@@ -1,0 +1,15 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+
+html,body,#root{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#root{
+  background-color:#131721;
+  color: #fff;
+}
