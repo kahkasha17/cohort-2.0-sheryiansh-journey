@@ -1,25 +1,32 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [name, setName] = useState(""); 
-  const [phone, setPhone] = useState("");              
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [contactList, setcontactList] = useState([]);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-   const handleSubmit = (e) => {
-  e.preventDefault();
+    const contacts = {
+      name: name,
+      phone: phone,
+    };
 
-  const contacts = {
-    name: name,
-    phone: phone
+    setcontactList([...contactList, contacts]);
+
+    setName("");
+    setPhone("");
   };
 
-  setcontactList([...contactList, contacts]);
 
-  setName("");
-  setPhone("");
-};
+  const handleDelete=(idx)=>{
+    console.log("contact deleted");
+    const oldContactList=[...contactList];
+    oldContactList.splice(idx,1);
+    setcontactList(oldContactList)
 
+  }
 
   return (
     <div className="flex flex-col p-4 ">
@@ -33,14 +40,14 @@ const App = () => {
           Contact Generator
         </h1>
       </div>
-      <div id="form" >
-        <form  onSubmit={handleSubmit} className=" flex flex-col gap-2 p-3">
+      <div id="form">
+        <form onSubmit={handleSubmit} className=" flex flex-col gap-2 p-3">
           <input
             type="text"
             placeholder="Enter your name"
             value={name}
-            onChange={(e)=>{
-              setName(e.target.value)
+            onChange={(e) => {
+              setName(e.target.value);
             }}
             className="block p-2 border border-gray-700"
           />
@@ -48,8 +55,8 @@ const App = () => {
             type="number"
             placeholder="Enter phone number"
             value={phone}
-            onChange={(e)=>{
-              setPhone(e.target.value)
+            onChange={(e) => {
+              setPhone(e.target.value);
             }}
             className="block p-2 border border-gray-700"
           />
@@ -69,36 +76,37 @@ const App = () => {
       </div>
 
       <div id="contact_list ">
-        { contactList.length ===0 ?
-        <h1 className="flex justify-center md:text-2xl lg:text-3xl">
-                  No contacts added yet
+        {contactList.length === 0 ? (
+          <h1 className="flex justify-center md:text-2xl lg:text-3xl">
+            No contacts added yet
+          </h1>
+        ) : (
+          contactList.map((item, index) => (
+            <div
+              key={index}
+              className="border p-3 mb-2 rounded flex justify-between"
+            >
+              <div>
+                <p className="font-semibold">Name: {item.name}</p>
+                <p className="text-gray-500">Phone: {item.phone}</p>
+              </div>
 
-        </h1> :
-        contactList.map((item, index) => (
-  <div key={index} className="border p-3 mb-2 rounded flex justify-between">
+              <div className="flex gap-2">
+                <button disabled className="bg-yellow-500 px-3 py-1 rounded text-white flex items-center gap-1">
+                  <i className="ri-pencil-line"></i>
+                  Edit
+                </button>
 
-    <div>
-<p className="font-semibold">Name: {item.name}</p>
-    <p className="text-gray-500">Phone: {item.phone}</p>
-    </div>
-    
-
-      <div class="flex gap-2">
-
-    <button class="bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded text-white flex items-center gap-1">
-      <i class="ri-pencil-line"></i>
-      Edit
-    </button>
-
-    <button class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white flex items-center gap-1">
-      <i class="ri-delete-bin-line"></i>
-      Delete
-    </button>
-
-  </div>
-  </div>
-))
-}
+                <button onClick={()=>{
+                  handleDelete(index)
+                }} className="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-white flex items-center gap-1">
+                  <i className="ri-delete-bin-line"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
