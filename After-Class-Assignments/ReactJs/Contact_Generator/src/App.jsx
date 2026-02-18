@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const App = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [contactList, setcontactList] = useState([]);
+  const localData=JSON.parse(localStorage.getItem("contact-list")) || [];
+  const [contactList, setcontactList] = useState(localData);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +14,10 @@ const App = () => {
       phone: phone,
     };
 
-    setcontactList([...contactList, contacts]);
+    const oldContactList=[...contactList,contacts]
+
+    setcontactList(oldContactList);
+    localStorage.setItem('contact-list',JSON.stringify(oldContactList));
 
     setName("");
     setPhone("");
@@ -22,9 +26,11 @@ const App = () => {
 
   const handleDelete=(idx)=>{
     console.log("contact deleted");
-    const oldContactList=[...contactList];
-    oldContactList.splice(idx,1);
-    setcontactList(oldContactList)
+    const newContactList=[...contactList];
+    newContactList.splice(idx,1);
+    setcontactList(newContactList)
+        localStorage.setItem('contact-list',JSON.stringify(newContactList));
+
 
   }
 
