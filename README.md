@@ -44,7 +44,12 @@ others/        → reflections, meeting notes, misc files
 | 3 | Vanilla JavaScript |  ✅ Completed | 2025-12-15 |
 | 4 | React JS |  ✅ Completed | 2026-01-15 |
 | 5 | Express JS |  ✅ Complete | 2026-01-24 |
-| 6 | Mongo DB |  ⏳ In Progress | - |
+| 6 | Mongo DB |   ✅ Complete | 2026-02-05 |
+| 7 | FullStack |   ✅ Completed | 2026-02-12 |
+| 8 | Backend Project-1 |   ✅ Completed | 2026-02-28 |
+| 9 | Redis |   ✅ Completed | 2026-03-06 |
+| 10 | Gen AI |   ✅ Completed | 2026-03-23 |
+| 11 | Product Development |  ⏳ In Progress | - |
 <!-- | 2 | CSS Fundamentals | 🔜 Upcoming | - | -->
 
 > ✨ *Progress tracker will be updated as the journey continues.*
